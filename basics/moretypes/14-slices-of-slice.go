@@ -8,9 +8,9 @@ import (
 func main() {
 	// Create a tic-tac-toe board.
 	board := [][]string{
-		[]string{"_", "_", "_"},
-		[]string{"_", "_", "_"},
-		[]string{"_", "_", "_"},
+		{"_", "_", "_"},
+		{"_", "_", "_"},
+		{"_", "_", "_"},
 	}
 
 	// The players take turns.
