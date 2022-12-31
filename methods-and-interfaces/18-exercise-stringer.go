@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"strconv"
+	// "strconv"
 )
 
 type IPAddr [4]byte
@@ -25,12 +25,14 @@ func (addr IPAddr) String() string {
 	// i3 := int(addr[3])
 	// buf += strconv.Itoa(i3)
 
-	for i, v := range addr {
-		if i != 0 {
-			buf += ":"
-		}
-		buf += strconv.Itoa(int(v))
-	}
+	// for i, v := range addr {
+	// 	if i != 0 {
+	// 		buf += ":"
+	// 	}
+	// 	buf += strconv.Itoa(int(v))
+	// }
+
+	buf = fmt.Sprintf("%d:%d:%d:%d", addr[0], addr[1], addr[2], addr[3])
 
 	return buf
 }
